@@ -1,0 +1,918 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    animation: appear 0.5s;
+    font-size: 16px;
+    text-align: justify;
+    width: 100%;
+    zoom: 80% !important;
+}
+
+.banner
+{
+    width: 100%;
+    margin: auto;
+}
+
+@keyframes appear
+{
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.ContainerMainPage
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ContainerMainPage button
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 25px;
+    background-color: black;
+    text-shadow: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.ContainerMainPage button:hover
+{
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.LeftCosmetics
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/MainPage/pexels-valeria-boltneva-90297.jpg");
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.LeftCosmetics:hover
+{
+    background-size: 200%;
+}
+
+.RightCarShop
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/MainPage/pexels-sourav-mishra-1231643.jpg");
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    transition: 1s;
+}
+
+.RightCarShop:hover
+{
+    background-size: 200%;
+}
+
+.ContentOnMainPage
+{
+    text-align: center;
+}
+
+.Mail
+{
+    width: 75%;
+    padding: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 980px)
+{
+    body
+    {
+        zoom: 100% !important;
+    }
+    .Mail
+    {
+        width: 100%;
+    }
+    .RightCarShop
+    {
+        background-size: cover;
+    }
+    .RightCarShop:hover
+    {
+        background-size: cover;
+    }
+    .LeftCosmetics
+    {
+        background-size: cover;
+    }
+    .LeftCosmetics:hover
+    {
+        background-size: cover;
+    }  
+}
+
+/*
+Cosmetics-------------------------------------------------------------------------------------------------------------------------------
+*/
+
+table
+{
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+tr:nth-child(even)
+{
+    background-color: whitesmoke;
+}
+
+td:nth-child(odd)
+{
+    color: orange;
+}
+
+td
+{
+    padding: 2%;
+}
+
+.menu
+{
+    height: 200px;
+    width: 100%;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+
+.menuin
+{
+    height: 100%;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.ContentMenu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.CarsChoose
+{
+    display: flex;
+    
+}
+
+.ContentMenu a 
+{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.ContentMenu a:hover 
+{
+    color: gold;
+    transition: 0.3s;
+}
+
+.ContainerMain
+{
+    margin: auto;
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 700px;
+}
+
+.containermenumobile
+{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.footer
+{
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 0px 4px hsla(0, 4%, 15%, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Concat
+{
+    margin: auto;
+    width: 75%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.Photos
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Photos .Inside
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.Photos .Inside img
+{
+    border-radius: 10px;
+    width: 50%;
+}
+
+@media screen and (max-width: 980px)
+{
+    .BoxShadow
+    {
+        box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+    }
+    .containermenumobile
+    {
+        padding: 1%;
+        visibility: visible;
+        opacity: 1;
+        display: contents;
+    }
+    .banner
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menuphone
+    {
+        margin: 10% 10% 10% 10%;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .menu
+    {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+    }
+
+    .menulines
+    {
+        width: 100%;
+        padding: 25%;
+        outline: none;
+        border: 2px gray solid;
+        border-radius: 25%;
+        background-color: white;
+    }
+    .menuphonecontent
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+    }
+    .menuphonecontent a
+    {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 40px;
+        transition-duration: 0.3s;
+    }
+
+    .ContainerMain
+    {
+        width: 95%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        min-height: 1800px;
+    }
+    
+    .Concat
+    {
+        width: 100%;
+    }
+
+    .Photos
+    {
+        flex-direction: column;
+    }
+
+    .Photos .Inside
+    {
+        flex-direction: column;
+    }
+    .Photos .Inside img
+    {
+        width: 100%;
+    }
+}
+
+/*
+CarShop--------------------------------------------------------
+*/
+
+.menuH
+{
+    height: 200px;
+    width: 100%;
+}
+
+.menuinH
+{
+    height: 75%;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.ContentMenuH
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.CarsChooseH
+{
+    height: 25%;
+}
+
+.CarsChooseH ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.CarsChooseH ul li
+{
+    width: 100%;
+}
+
+.CarsChooseH a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    margin: 1%;
+    font-size: 20px;
+}
+
+.CarsChooseH a:hover
+{
+    color: green;
+}
+
+.CarsChooseH ul li .under
+{
+    transition: 0.3s;
+    width: 1%;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.CarsChooseH ul li .under.active
+{
+    width: 90%;
+    margin: auto;
+    border: 5px solid green;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.CarsChooseH ul li #thispage
+{
+    transition: 0.3s;
+    width: 50%;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.CarsChooseH ul li #thispage.active
+{
+    width: 90%;
+    margin: auto;
+    border: 5px solid green;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.ContentMenuH a 
+{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.ContentMenuH a:hover 
+{
+    color: green;
+    transition: 0.3s;
+}
+
+.ContainerMainH
+{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 700px;
+}
+
+/*
+CARD CAR---------------------------------------------------------
+*/
+
+.CarCard
+{
+    width: 23%;
+    border: 5px solid gray;
+    border-radius: 25px;
+    margin: 1%;
+    float: left;
+    height: 600px;
+    text-align: center;
+}
+
+.CarCard.active
+{
+    background-color: white;
+    width: 50%;
+    z-index: 1;
+    height: auto;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+.CarCardImage
+{
+    padding: 1%;
+    height: 50%;
+}
+
+.CarCardImage img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+    float: left;
+}
+
+.CardCarContent
+{
+    width: 100%;
+    height: 40%;
+    padding: 1%;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+}
+
+.CardCarContentMore
+{
+    display: none;
+}
+
+.CarCard.active .CardCarContentMore
+{
+    display: block;
+}
+
+.ButtonsOnCarCard
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.ShowMore
+{
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+}
+
+.ShowMore:hover
+{
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+
+.ShowLess
+{
+    padding: 10px;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+    display: none;
+}
+
+.ShowLess:hover
+{
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+
+.CarCard.active .ShowMore
+{
+    display: none;
+}
+
+.CarCard.active .ShowLess
+{
+    display: block;
+}
+
+.CarCardBigger
+{
+    width: 100%;
+    height: 600px;
+    display: none;
+}
+
+.CarCardBigger .carousel
+{
+    margin: 1%;
+    height: 100%;
+}
+
+.CarCardBigger .carousel .carousel-inner
+{
+    width: 100%;
+    height: 100%;
+}
+
+.CarCardBigger .carousel .carousel-inner
+{
+    width: 100%;
+    height: 100%;
+}
+
+.CarCardBigger .carousel .carousel-inner .carousel-item
+{
+    width: 100%;
+    height: 100%;
+}
+
+.CarCardBigger .carousel .carousel-inner .carousel-item img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.CarCard.active .CarCardBigger
+{
+    display: block;
+}
+
+.CarCard.active .CarCardImage
+{
+    display: none;
+}
+
+/*
+CARD'S ADD-------------------------------------------------------
+*/
+
+.AddCard
+{
+    width: 75%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+}
+
+.AddCard:hover
+{
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+
+.CarCard.active .AddCard
+{
+    display: none;
+}
+
+.SaveCard
+{
+    width: 75%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+    display: none;
+}
+
+.SaveCard:hover
+{
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+
+.CarCard.active .SaveCard
+{
+    display: block;
+}
+
+
+.CancelCard
+{
+    width: 75%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+    display: none;
+}
+
+.CancelCard:hover
+{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+.CarCard.active .CancelCard
+{
+    display: block;
+}
+
+.Delete
+{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+.Delete:hover
+{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+.SaveCancel
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slajder
+{
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+.CarCard.active .Slajder 
+{
+    display: block;
+}
+
+.Tittle
+{
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+.CarCard.active .Tittle
+{
+    display: block;
+}
+
+.DescriptionSmaller
+{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.CarCard.active .DescriptionSmaller
+{
+    display: block;
+}
+
+.DescriptionBigger
+{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.CarCard.active .DescriptionBigger
+{
+    display: block;
+}
+
+#tittleVechicle
+{
+    width: 100%;
+}
+
+#tittleDescriptionSmaller
+{
+    width: 100%;
+}
+
+#tittleDescriptionBigger
+{
+    width: 100%;
+    min-height: 400px;
+}
+
+.carousel-control-next-icon
+{
+    background-color: black;
+    border-radius: 25%;
+}
+
+.carousel-control-prev-icon
+{
+    background-color: black;
+    border-radius: 25%;
+}
+
+/*
+-----------------------------------------------------------------
+*/
+
+@media screen and (max-width: 980px)
+{
+    .menuH
+    {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+    }
+
+.CarsChooseH ul
+{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.CarsChooseH ul li
+{
+    text-align: center;
+    width: 100%;
+}
+
+.CarsChooseH a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    margin: 1%;
+    font-size: 20px;
+}
+
+.CarsChooseH a:hover
+{
+    display: none;
+}
+
+.CarsChooseH ul li .under
+{
+    display: none;
+}
+
+.CarsChooseH ul li .under.active
+{
+    display: none;
+}
+
+.CarsChooseH ul li #thispage
+{
+    display: none;
+}
+
+.CarsChooseH ul li #thispage.active
+{
+    display: none;
+}
+}
+
