@@ -22,7 +22,7 @@
             </div>
             <div class="menuphone">
                 <button class="menulines">
-                    <img src="img/Menu/meunlines.png" alt="" width="100%">
+                    <img src="img/Menu/meunlines.webp" alt="" width="100%">
                 </button>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic totam, non recusandae quibusdam ipsam animi? Necessitatibus accusantium alias, voluptate deserunt minus velit esse deleniti, reprehenderit placeat et ex aliquam laboriosam modi quidem? Cumque ipsam placeat quae nam. Quos repudiandae dolorum, neque, magni iste minus temporibus incidunt tempora nemo quam officia doloremque? Odio, deleniti fugiat earum soluta, officia sit voluptate repellat eius perferendis aliquam molestiae ad ipsam, necessitatibus nobis a! Eius aperiam dolorum harum asperiores iusto dolor explicabo assumenda tempora quisquam, facilis expedita non omnis repudiandae quam possimus doloribus libero consequuntur autem nam saepe mollitia repellat ut. Nulla aperiam dolore rem!</p>
         <div class="Concat">
             <div style="height: 100%;">
-                <img src="../../img/Concat/kontakt.png" alt="" height="100%">
+                <img src="../../img/Concat/kontakt.webp" alt="" height="100%">
             </div>
             <div style="margin: 5%;">
                 <p>Numer telefonu: XXX XXX XXX</p>
@@ -59,7 +59,7 @@
         </div>
         <div class="Concat">
             <div style="height: 100%;">
-                <img src="../../img/Concat/Adres.png" alt="" height="100%">
+                <img src="../../img/Concat/Adres.webp" alt="" height="100%">
             </div>
             <div style="margin: 5%;">
                 <p>Adres: Wawrzyńca Kałusa 3, 41-710 Ruda Śląska</p>
